@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "declaration": true,
+        "outDir": "lib",
+        "allowJs": true,
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "rootDir": "./src",
+        "baseUrl": ".",
+        "paths": {
+            "@app/*": ["./src/*"]
+        },
+        "types": ["node"]
+    },
+    "exclude": ["node_modules", "lib", "**/*.spec.ts", "**/*.test.ts"]
+}

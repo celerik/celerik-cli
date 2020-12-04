@@ -1,0 +1,28 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "esmodules": true,
+                    "node": true
+                }
+            }
+        ],
+        "@babel/typescript"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["."],
+                "alias": {
+                    "@app": "./src"
+                }
+            }
+        ],
+        "@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread"
+    ],
+    "ignore": ["**/*.spec.ts", "**/*.test.ts"]
+}
