@@ -1,4 +1,8 @@
+// @packages
 import yargs from 'yargs';
+
+// @scripts
+import { log } from '@app/utils';
 
 export function createCli(argv: Array<string>): yargs.Arguments {
     const cli = yargs(argv).parserConfiguration({
@@ -20,9 +24,10 @@ export function createCli(argv: Array<string>): yargs.Arguments {
         .command({
             command: 'create [rootPath] [starter]',
             describe: 'Create a new project with @celerik/cli',
+            aliases: ['c'],
             handler: ({ rootPath, starter }) => {
-                console.log(rootPath);
-                console.log(starter);
+                log.DEBUG(rootPath);
+                log.DEBUG(starter);
             },
         })
         .demandCommand(1, 'Pass --help to see all available commands')
