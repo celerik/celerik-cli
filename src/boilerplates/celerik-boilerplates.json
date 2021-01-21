@@ -1,0 +1,5 @@
+{
+    "react-native": "https://github.com/celerik/react-native-boilerplate.git",
+    "ionic-react": "https://github.com/celerik/ionic-react-boilerplate.git",
+    "nest": "https://github.com/celerik/nest-boilerplate.git"
+}

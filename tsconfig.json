@@ -10,6 +10,7 @@
         "esModuleInterop": true,
         "rootDir": "./src",
         "baseUrl": ".",
+        "resolveJsonModule": true,
         "paths": {
             "@app/*": ["./src/*"]
         },
